@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>COVID-19 RESOURCES TRACKER</title>
+<link rel="icon" href="C:\Users\Dell\Desktop\miniproject\th.jpg" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="https://search.yahoo.com/search;_ylt=Awr9Jh1OnY5gy4sAvQC7HAx.;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZANDMTYxNF8xBHNlYwNyZWw-?p=cowin.gov.in&type=E211US826G0&ei=UTF-8&fr2=rs-top&fr=mcafee" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VACCINE</a>
+    <a href="http://nsscdcl.org/covidbeds/AvailableHospitals.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COVID-19 BEDS</a>
+    <a href="https://dir.indiamart.com/impcat/medical-oxygen-cylinder.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OXYGEN CYLINDER</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#About-us" class="w3-bar-item w3-button">About us</a>
+        <a href="https://www.nmcnagpur.gov.in/covid-19" class="w3-bar-item w3-button">About Covid-19</a>
+      </div>
+    </div>
+    <a href="www.google.com" class="w3-padding-large w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+	<a href="#" class="w3-padding-large w3-hide-small w3-right"><i class="fa fa-contact"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-small">Login</button></i></a>
+	<a href="#" class="w3-padding-large w3-hide-small w3-right"><i class="fa fa-contact"><button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green w3-small">Register</button></i></a>
+  </div>
+</div>
+<-- login -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="miniproject\user.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+<-- registration-->
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="miniproject\user.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+<form action="action_page.php">
+  <div class="container">
+    <h1><center>Registeration</center></h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Email" name="Email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="password" name="password" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Repeat-password" name="Repeat-password" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+</div>
+  </div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  <a href="#About-us" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About us</a>
+  <a href="#https://www.nmcnagpur.gov.in/covid-19" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Covid-19</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">X</a>
+</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="miniproject\1140-ventilators-older-patients-risk.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-30 w3-hide-small">
+      <h3>COVID-19</h3>
+      <p><b>NEED PAUSE TO BREAK TRANSMISSION.</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="miniproject\20210403_MUM-PC-MN_Coronavirus_021_1617531280823_1617531320779.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-30 w3-hide-small">
+      <h3>ALERT</h3>
+      <p><b>STAY ALERT CONTROL VIRUS SAVE LIVES</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="miniproject\ready-for-vaccination-1609912549.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h3>VACCINE</h3>
+      <p><b>BE SUPPORTIVE BE CAREFUL BE ALERT BE KIND BE READY TO FIGHT COVID-19</b></p>
+    </div>
+  </div>
+
+ 
+  <!-- The Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">COVID-19 RESOURCES</h2>
+      <p class="w3-opacity w3-center"><i>TARCK YOUR RESOURCES DIRECTLY!</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="miniproject\1eec08cc-9dae-11eb-aa67-d1e615859831_1618465796991.jpg" alt="COVID-19 BEDS" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>COVID-19 BEDS</b></p>
+            <p>SEARCH HERE AVAILABLE BEDS IN HOSPITALS NUMBER OF OCCUPIED AND VACANT BEDS.</p>
+            
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="miniproject\vaccine.jpg" alt="VACCINE" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>VACCINE</b></p>
+            <p>GET VACCINE FOR FIGHT TO CORONA.VACCINATION BEGIN IN INDIA </p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="miniproject\oxgcylinder.jpg" alt="OXYGEN CYLINDER" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>OXYGEN CYLINDER</b></p>
+            <p>CHECK AVAILABLITY OF O2 BEDS AND NON-O2 BEDS IN DIFFERENT HOSPITALS</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+        <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> NAGPUR-44009<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone NO.: 9763836854</br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email:kiraningle2920@gmail.com <br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- The  Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="About-us">
+    <h3 class="w3-wide">ABOUT-US</h3>
+    <p class="w3-opacity"><i>STAY ALERT CONTROL VIRUS SAVE LIVES</i></p><b>
+    <p class="w3-justify">We have created a fictional covid-19 website. BE SUPPORTIVE BE CAREFUL BE ALERT BE KIND BE READY TO FIGHT COVID-19, this portal helps to find out vacent covid beds in hospitals, vaccines , O2 cylinder beds, non-O2 cylinder beds user can easily track the available resources.</p><b>
+    <div class="w3-row w3-padding-42">
+      <div class="w3-quarter">
+        <p>Kiran Ingle</p>
+        <img src="miniproject\kiran.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:50%">
+      </div>
+      <div class="w3-quarter">
+        <p>Puja Goswami<p>
+        <img src="miniproject\pooja.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:50%">
+      </div>
+      <div class="w3-quarter">
+        <p>Achal Bawankule</p>
+        <img src="miniproject\Achal.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:50%">
+      </div>
+	  <div class="w3-quarter">
+        <p>Payal Gajbhiye</p>
+        <img src="miniproject\Payal.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
